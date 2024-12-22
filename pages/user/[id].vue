@@ -5,9 +5,6 @@
     <p>Referred by: {{ route.query.ref }}</p>
   </div>
 
-  <head>
-    <title>User {{ route.params.id }} Page</title>
-  </head>
 
 </template>
 

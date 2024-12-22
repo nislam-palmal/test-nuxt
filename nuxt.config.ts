@@ -1,18 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
+  runtimeConfig: {
+    public: {
+      apiBase: 'https://admitdoctors.com',
+    },
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-
   pages: true, 
-
 
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'My Website',
-      // link and script file must be at public directory 
       link: [
         { rel: 'stylesheet', href: '/assets/css/all.css' },
         { rel: 'stylesheet', href: '/assets/css/bootstrap.min.css' },
@@ -37,10 +37,8 @@ export default defineNuxtConfig({
         { src: '/assets/js/isotop.min.js', type: 'text/javascript', defer: true },
         { src: '/assets/js/script.js', type: 'text/javascript', defer: true }
       ]
-
-    },
-    
+    }
   },
 
 
-})
+});
